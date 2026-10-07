@@ -1,0 +1,1776 @@
+/* =========================================================
+   GENERAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   HEADER / HOME
+========================================================= */
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("jen.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* Dark overlay over background image */
+
+.header::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 5%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    width: 85px !important;
+    height: 85px !important;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Prevent other nav image rules from enlarging logo */
+
+nav img {
+    width: auto;
+    height: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+
+    align-items: center;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    gap: 25px;
+
+    white-space: nowrap;
+}
+
+.nav-links ul li {
+    display: inline-block;
+}
+
+.nav-links ul li a {
+    display: block;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 8px 4px;
+
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    color: #f4c542;
+}
+
+
+/* =========================================================
+   MENU ICONS
+========================================================= */
+
+nav .fa {
+    display: none;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.text-box {
+    width: 90%;
+    max-width: 900px;
+
+    color: white;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.text-box h1 {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+
+    color: white;
+
+    line-height: 1.2;
+}
+
+.text-box p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+    color: white;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-btn,
+.apply-btn {
+    display: inline-block;
+
+    color: white;
+
+    border: 2px solid white;
+
+    padding: 12px 30px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover,
+.apply-btn:hover {
+    background: #f4c542;
+
+    border-color: #f4c542;
+
+    color: #000;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+section {
+    width: 100%;
+}
+
+.courses,
+.about,
+.intro {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+
+    padding: 80px 0;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.courses h1,
+.about h1,
+.intro h1 {
+    font-size: 36px;
+
+    color: #123b70;
+
+    margin-bottom: 15px;
+}
+
+.courses > p,
+.about > p,
+.intro > p {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ROW
+========================================================= */
+
+.row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   COURSE CARDS
+========================================================= */
+
+.course-col {
+    flex: 1;
+
+    background: #f5f5f5;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.course-col img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.course-col h3 {
+    color: #123b70;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.course-col p {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.course-col:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-col {
+    flex: 1;
+
+    background: #0066cc;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.about-col h3 {
+    margin-bottom: 10px;
+
+    color: white;
+}
+
+.about-col p {
+    color: white;
+
+    font-size: 14px;
+}
+
+.about-col:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.intro img {
+    width: 100%;
+
+    max-height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 30px;
+}
+
+.intro-col {
+    flex: 1;
+
+    background: #f5f5f5;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+}
+
+.intro-col h3 {
+    color: #123b70;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   ADMISSION PAGE
+========================================================= */
+
+.admission-section {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 120px 0 80px;
+}
+
+.admission-section h1 {
+    text-align: center;
+
+    color: #123b70;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+.admission-section > p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================================================
+   ADMISSION FORM
+========================================================= */
+
+.admission-form {
+    width: 100%;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Form group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.admission-form label {
+    display: block;
+
+    color: #123b70;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* Inputs */
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+
+/* Input focus */
+
+.admission-form input:focus,
+.admission-form select:focus,
+.admission-form textarea:focus {
+    border-color: #0066cc;
+
+    box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+
+/* Textarea */
+
+.admission-form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+/* Two-column form */
+
+.form-row {
+    display: flex;
+
+    gap: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+
+/* Submit button */
+
+.admission-form button,
+.submit-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #0066cc;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.admission-form button:hover,
+.submit-btn:hover {
+    background: #004f9e;
+}
+
+
+/* =========================================================
+   CALL TO ACTION
+========================================================= */
+
+.cta {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 50px auto;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #0066cc;
+
+    color: white;
+
+    border-radius: 10px;
+}
+
+.cta h1 {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+}
+
+.cta p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #222;
+
+    color: white;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #ccc;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* Navigation */
+
+    nav {
+        height: 70px;
+
+        padding: 8px 5%;
+    }
+
+
+    /* Smaller logo */
+
+    .logo {
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+
+    /* Mobile navigation */
+
+    .nav-links {
+        position: fixed;
+
+        top: 0;
+        right: -250px;
+
+        width: 250px;
+        height: 100vh;
+
+        background: #0066cc;
+
+        z-index: 100;
+
+        display: block;
+
+        transition: 0.4s;
+
+        padding-top: 50px;
+    }
+
+
+    .nav-links ul {
+        display: block;
+
+        padding: 20px 30px;
+
+        white-space: normal;
+    }
+
+
+    .nav-links ul li {
+        display: block;
+
+        margin: 25px 0;
+    }
+
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+
+
+    /* Menu icons */
+
+    nav .fa {
+        display: block;
+
+        color: white;
+
+        font-size: 24px;
+
+        cursor: pointer;
+
+        z-index: 101;
+    }
+
+
+    /* Hero */
+
+    .text-box h1 {
+        font-size: 32px;
+    }
+
+    .text-box p {
+        font-size: 15px;
+    }
+
+
+    /* Sections */
+
+    .courses,
+    .about,
+    .intro {
+        width: 90%;
+
+        padding: 60px 0;
+    }
+
+
+    .courses h1,
+    .about h1,
+    .intro h1,
+    .admission-section h1 {
+        font-size: 28px;
+    }
+
+
+    /* Cards */
+
+    .row {
+        flex-direction: column;
+    }
+
+
+    /* Admission */
+
+    .admission-section {
+        width: 90%;
+
+        padding-top: 100px;
+    }
+
+    .admission-form {
+        padding: 25px 20px;
+    }
+
+
+    /* Form rows become one column */
+
+    .form-row {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    /* CTA */
+
+    .cta {
+        width: 90%;
+
+        padding: 50px 20px;
+    }
+
+    .cta h1 {
+        font-size: 26px;
+    }
+}
+/*=======================================================
+   CONTACT PAGE HEADER
+========================================================= */
+
+.contact-header {
+    width: 100%;
+    min-height: 50vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("jen.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   CONTACT HEADER NAVIGATION
+========================================================= */
+
+.contact-header nav {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 5%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+
+/* =========================================================
+   CONTACT LOGO
+========================================================= */
+
+.contact-header .logo {
+    width: 85px !important;
+    height: 85px !important;
+
+    object-fit: contain;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================================
+   CONTACT NAVIGATION
+========================================================= */
+
+.contact-header .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.contact-header .nav-links ul {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+}
+
+.contact-header .nav-links ul li {
+    display: inline-block;
+}
+
+.contact-header .nav-links ul li a {
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 8px 5px;
+
+    transition: 0.3s;
+}
+
+.contact-header .nav-links ul li a:hover {
+    color: #f4c542;
+}
+
+
+/* =========================================================
+   CONTACT HEADER TITLE
+========================================================= */
+
+.contact-title {
+    width: 90%;
+    max-width: 900px;
+
+    position: absolute;
+
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    color: white;
+}
+
+.contact-title h1 {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.contact-title p {
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contact-section {
+    width: 100%;
+
+    padding: 80px 5%;
+
+    background: #f7f8fa;
+}
+
+
+/* =========================================================
+   CONTACT CONTAINER
+========================================================= */
+
+.contact-container {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 50px;
+
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION
+========================================================= */
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: #123b70;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   CONTACT ITEMS
+========================================================= */
+
+.contact-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    margin-bottom: 25px;
+}
+
+.contact-item i {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #0066cc;
+
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 17px;
+
+    flex-shrink: 0;
+}
+
+.contact-item h3 {
+    color: #123b70;
+
+    font-size: 16px;
+
+    margin-bottom: 3px;
+}
+
+.contact-item p {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+.contact-form {
+    flex: 1;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #123b70;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: #fff;
+
+    transition: 0.3s;
+}
+
+.contact-form textarea {
+    resize: vertical;
+
+    min-height: 130px;
+}
+
+
+/* Input focus */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0066cc;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 102, 204, 0.10);
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.contact-btn {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #0066cc;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #004f9e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CONTACT FOOTER
+========================================================= */
+
+.contact-header + .contact-section {
+    min-height: 500px;
+}
+
+
+/* =========================================================
+   MOBILE CONTACT PAGE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .contact-header {
+        min-height: 55vh;
+    }
+
+
+    .contact-header nav {
+        height: 70px;
+
+        padding: 8px 5%;
+    }
+
+
+    /* Logo */
+
+    .contact-header .logo {
+        width: 65px !important;
+        height: 65px !important;
+    }
+
+
+    /* Mobile menu */
+
+    .contact-header .nav-links {
+        position: fixed;
+
+        top: 0;
+        right: -250px;
+
+        width: 250px;
+        height: 100vh;
+
+        background: #0066cc;
+
+        z-index: 100;
+
+        display: block;
+
+        padding-top: 50px;
+
+        transition: 0.4s;
+    }
+
+
+    .contact-header .nav-links ul {
+        display: block;
+
+        padding: 20px 30px;
+
+        white-space: normal;
+    }
+
+
+    .contact-header .nav-links ul li {
+        display: block;
+
+        margin: 25px 0;
+    }
+
+
+    .contact-header .nav-links ul li a {
+        font-size: 16px;
+    }
+
+
+    /* Menu icons */
+
+    .contact-header nav .fa {
+        display: block;
+
+        color: white;
+
+        font-size: 24px;
+
+        cursor: pointer;
+    }
+
+
+    /* Header title */
+
+    .contact-title h1 {
+        font-size: 32px;
+    }
+
+    .contact-title p {
+        font-size: 15px;
+    }
+
+
+    /* Contact section */
+
+    .contact-section {
+        padding: 60px 5%;
+    }
+
+
+    .contact-container {
+        flex-direction: column;
+
+        gap: 40px;
+    }
+
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+}
+
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+
+/* About Header */
+.about-header {
+    min-height: 55vh;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("jen.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* About Navigation */
+.about-header nav {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+/* About Page Title */
+.about-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.about-title h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* About Section */
+.about-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+
+/* Introduction */
+.about-intro {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.about-intro h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.about-intro p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555555;
+}
+
+
+/* Vision, Mission and Values */
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+/* Individual Columns */
+.about-row .intro-col {
+    flex: 1;
+    background: #f5f5f5;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+
+/* Hover Effect */
+.about-row .intro-col:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Icons */
+.about-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #f4c542;
+}
+
+
+/* Headings */
+.about-row .intro-col h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+
+/* Paragraphs */
+.about-row .intro-col p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+
+/* Back to Home Button */
+.about-button {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* Footer */
+.footer {
+    background: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .about-header {
+        min-height: 50vh;
+    }
+
+    .about-title h1 {
+        font-size: 28px;
+    }
+
+    .about-section {
+        width: 90%;
+        padding: 50px 0;
+    }
+
+    .about-intro h2 {
+        font-size: 26px;
+    }
+
+    .about-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-row .intro-col {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   APPLY NOW PAGE
+   ========================================= */
+
+
+/* APPLY HEADER */
+.apply-header {
+    min-height: 55vh;
+    width: 100%;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+        ),
+        url("jen.jpg");
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* APPLY PAGE TITLE */
+.apply-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.apply-title h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.apply-title p {
+    font-size: 18px;
+}
+
+
+/* APPLICATION SECTION */
+.application-section {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 70px 20px;
+}
+
+
+/* APPLICATION CONTAINER */
+.application-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* HEADING */
+.application-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.application-heading h2 {
+    font-size: 32px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.application-heading p {
+    color: #666666;
+    font-size: 16px;
+}
+
+.application-heading span {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* APPLICATION FORM */
+.application-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* FORM SECTION */
+.form-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.form-section h3 {
+    font-size: 22px;
+    color: #222222;
+    margin-bottom: 25px;
+}
+
+.form-section h3 i {
+    color: #f4c542;
+    margin-right: 8px;
+}
+
+
+/* FORM ROW */
+.form-row {
+    display: flex;
+    gap: 25px;
+}
+
+
+/* FORM GROUP */
+.form-group {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+
+/* LABEL */
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+
+/* INPUTS AND SELECT */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+
+/* TEXTAREA */
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* INPUT FOCUS */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #f4c542;
+    box-shadow: 0 0 5px rgba(244, 197, 66, 0.3);
+}
+
+
+/* FILE INPUT */
+.form-group input[type="file"] {
+    padding: 10px;
+    background: #fafafa;
+}
+
+
+/* SMALL TEXT */
+.form-group small {
+    display: block;
+    margin-top: 7px;
+    color: #777777;
+}
+
+
+/* DECLARATION */
+.declaration {
+    margin: 25px 0;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 5px;
+}
+
+.declaration label {
+    color: #444444;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.declaration input {
+    margin-right: 8px;
+}
+
+
+/* BUTTON AREA */
+.application-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+/* SUBMIT BUTTON */
+.apply-submit {
+    background: #f4c542;
+    color: #222222;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apply-submit:hover {
+    background: #dcae22;
+    transform: translateY(-2px);
+}
+
+
+/* RESET BUTTON */
+.reset-btn {
+    background: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: #555555;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .apply-header {
+        min-height: 50vh;
+    }
+
+    .apply-title h1 {
+        font-size: 30px;
+    }
+
+    .apply-title p {
+        font-size: 15px;
+    }
+
+    .application-section {
+        padding: 45px 15px;
+    }
+
+    .application-form {
+        padding: 25px 20px;
+    }
+
+    .application-heading h2 {
+        font-size: 25px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .application-buttons {
+        flex-direction: column;
+    }
+
+    .apply-submit,
+    .reset-btn {
+        width: 100%;
+    }
+
+}
