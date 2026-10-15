@@ -265,7 +265,7 @@ section {
 
     text-align: center;
 
-    padding: 80px 0;
+    padding: 5px 0;
 }
 
 
@@ -277,9 +277,7 @@ section {
 .about h1,
 .intro h1 {
     font-size: 36px;
-
     color: #123b70;
-
     margin-bottom: 15px;
 }
 
@@ -287,85 +285,59 @@ section {
 .about > p,
 .intro > p {
     max-width: 800px;
-
     margin: 0 auto 40px;
-
     color: #666;
-
     font-size: 15px;
-
     line-height: 1.7;
 }
-
 
 /* =========================================================
    ROW
 ========================================================= */
-
 .row {
     display: flex;
-
     justify-content: space-between;
-
     gap: 25px;
-
     margin-top: 30px;
 }
-
 
 /* =========================================================
    COURSE CARDS
 ========================================================= */
-
 .course-col {
     flex: 1;
-
     background: #f5f5f5;
-
     border-radius: 10px;
-
     padding: 20px;
-
     text-align: center;
-
     transition: 0.3s;
-
     overflow: hidden;
 }
 
 .course-col img {
     width: 100%;
     height: 200px;
-
     object-fit: cover;
-
     border-radius: 8px;
-
     margin-bottom: 15px;
 }
 
 .course-col h3 {
     color: #123b70;
-
     font-size: 20px;
-
     margin-bottom: 10px;
 }
 
 .course-col p {
     color: #555;
-
     font-size: 14px;
-
     line-height: 1.7;
 }
 
 .course-col:hover {
     transform: translateY(-8px);
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
 
 /* =========================================================
    ABOUT
@@ -373,15 +345,10 @@ section {
 
 .about-col {
     flex: 1;
-
     background: #0066cc;
-
     color: white;
-
     border-radius: 10px;
-
     padding: 30px;
-
     transition: 0.3s;
 }
 
@@ -393,16 +360,13 @@ section {
 
 .about-col p {
     color: white;
-
     font-size: 14px;
 }
 
 .about-col:hover {
     transform: translateY(-8px);
-
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-
 
 /* =========================================================
    INTRODUCTION
@@ -410,32 +374,23 @@ section {
 
 .intro img {
     width: 100%;
-
     max-height: 500px;
-
     object-fit: cover;
-
     border-radius: 10px;
-
     margin-bottom: 30px;
 }
 
 .intro-col {
     flex: 1;
-
     background: #f5f5f5;
-
     padding: 30px 20px;
-
     border-radius: 10px;
 }
 
 .intro-col h3 {
     color: #123b70;
-
     margin-bottom: 10px;
 }
-
 
 /* =========================================================
    ADMISSION PAGE
@@ -444,47 +399,33 @@ section {
 .admission-section {
     width: 90%;
     max-width: 1000px;
-
     margin: 0 auto;
-
     padding: 120px 0 80px;
 }
 
 .admission-section h1 {
     text-align: center;
-
     color: #123b70;
-
     font-size: 36px;
-
     margin-bottom: 10px;
 }
 
 .admission-section > p {
     text-align: center;
-
     color: #666;
-
     margin-bottom: 40px;
 }
-
 
 /* =========================================================
    ADMISSION FORM
 ========================================================= */
-
 .admission-form {
     width: 100%;
-
     background: #ffffff;
-
     padding: 35px;
-
     border-radius: 10px;
-
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
 }
-
 
 /* Form group */
 
@@ -497,13 +438,9 @@ section {
 
 .admission-form label {
     display: block;
-
     color: #123b70;
-
     font-size: 14px;
-
     font-weight: bold;
-
     margin-bottom: 7px;
 }
 
@@ -514,19 +451,12 @@ section {
 .admission-form select,
 .admission-form textarea {
     width: 100%;
-
     padding: 13px 15px;
-
     border: 1px solid #ccc;
-
     border-radius: 5px;
-
     outline: none;
-
     font-size: 14px;
-
     background: #fff;
-
     transition: 0.3s;
 }
 
@@ -537,7 +467,6 @@ section {
 .admission-form select:focus,
 .admission-form textarea:focus {
     border-color: #0066cc;
-
     box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
 }
 
@@ -546,7 +475,6 @@ section {
 
 .admission-form textarea {
     min-height: 120px;
-
     resize: vertical;
 }
 
@@ -555,7 +483,6 @@ section {
 
 .form-row {
     display: flex;
-
     gap: 20px;
 }
 
@@ -569,23 +496,14 @@ section {
 .admission-form button,
 .submit-btn {
     width: 100%;
-
     padding: 14px;
-
     border: none;
-
     border-radius: 5px;
-
     background: #0066cc;
-
     color: white;
-
     font-size: 15px;
-
     font-weight: bold;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -602,23 +520,16 @@ section {
 .cta {
     width: 90%;
     max-width: 1100px;
-
     margin: 50px auto;
-
     padding: 70px 20px;
-
     text-align: center;
-
     background: #0066cc;
-
     color: white;
-
     border-radius: 10px;
 }
 
 .cta h1 {
     margin-bottom: 15px;
-
     font-size: 32px;
 }
 
@@ -633,13 +544,9 @@ section {
 
 .footer {
     width: 100%;
-
     text-align: center;
-
     padding: 40px 20px;
-
     background: #222;
-
     color: white;
 }
 
@@ -649,7 +556,6 @@ section {
 
 .footer p {
     color: #ccc;
-
     font-size: 14px;
 }
 
@@ -659,15 +565,12 @@ section {
 ========================================================= */
 
 @media (max-width: 700px) {
-
     /* Navigation */
 
     nav {
         height: 70px;
-
         padding: 8px 5%;
     }
-
 
     /* Smaller logo */
 
@@ -681,37 +584,27 @@ section {
 
     .nav-links {
         position: fixed;
-
         top: 0;
         right: -250px;
-
         width: 250px;
         height: 100vh;
-
         background: #0066cc;
-
         z-index: 100;
-
         display: block;
-
         transition: 0.4s;
-
         padding-top: 50px;
     }
 
 
     .nav-links ul {
         display: block;
-
         padding: 20px 30px;
-
         white-space: normal;
     }
 
 
     .nav-links ul li {
         display: block;
-
         margin: 25px 0;
     }
 
@@ -720,18 +613,13 @@ section {
         font-size: 16px;
     }
 
-
     /* Menu icons */
 
     nav .fa {
         display: block;
-
         color: white;
-
         font-size: 24px;
-
         cursor: pointer;
-
         z-index: 101;
     }
 
@@ -753,7 +641,6 @@ section {
     .about,
     .intro {
         width: 90%;
-
         padding: 60px 0;
     }
 
@@ -1568,7 +1455,7 @@ section {
 
 /* APPLICATION FORM */
 .application-form {
-    background: #ffffff;
+    background: #0355a7;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
@@ -1773,4 +1660,447 @@ section {
         width: 100%;
     }
 
+}
+
+
+/* ===================================
+   UNIVERSITY OF ARUSHA FOOTER
+=================================== */
+
+.ua-footer {
+    background: #050414;
+    color: #fff;
+    padding: 90px 4% 20px;
+    box-sizing: border-box;
+}
+
+.ua-footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 0.9fr 0.9fr 0.9fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.ua-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.ua-footer-brand img {
+    width: 200px;
+    height: 115px;
+    object-fit: contain;
+}
+
+.ua-footer-brand span {
+    display: flex;
+    flex-direction: column;
+}
+
+.ua-footer-brand strong {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 23px;
+}
+
+.ua-footer-brand small {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.ua-footer-about > p,
+.ua-footer-column > p {
+    color: #89889a;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.ua-footer-about > p i,
+.ua-footer-column > p i {
+    margin-right: 10px;
+}
+
+.ua-footer a {
+    transition: color 0.2s ease;
+}
+
+.ua-footer-about > p a,
+.ua-footer-column > p a {
+    color: #89889a;
+    text-decoration: none;
+}
+
+.ua-footer a:hover {
+    color: #e1b52c;
+}
+
+.ua-footer-column h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 5px 0 55px;
+}
+
+.ua-footer-column > a {
+    display: block;
+    color: #89889a;
+    text-decoration: none;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.ua-footer-column > p {
+    margin-top: 35px;
+}
+
+.ua-footer-note {
+    margin-top: 25px;
+}
+
+.ua-social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.ua-social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 27px;
+}
+
+.ua-footer-bottom {
+    margin-top: 55px;
+    padding-top: 20px;
+    border-top: 1px solid #252337;
+    text-align: center;
+}
+
+.ua-footer-bottom p {
+    color: #89889a;
+    font-size: 14px;
+}
+
+
+/* ===================================
+   FLOATING WHATSAPP BUTTON
+=================================== */
+
+.ua-whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #075e54;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    text-decoration: none;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+}
+
+.ua-whatsapp:hover {
+    background: #128c7e;
+    color: #fff;
+}
+
+
+/* ===================================
+   TABLET AND SMALL LAPTOP
+=================================== */
+
+@media (max-width: 1200px) {
+    .ua-header {
+        flex-wrap: wrap;
+    }
+
+    .ua-brand img {
+        width: 60px;
+        height: 65px;
+    }
+
+    .ua-brand-text strong {
+        font-size: 16px;
+    }
+
+    .ua-brand-text small {
+        font-size: 13px;
+    }
+
+    .ua-menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .ua-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        order: 5;
+    }
+
+    .ua-nav.ua-nav-open {
+        display: flex;
+    }
+
+    .ua-nav > a,
+    .ua-dropdown > a {
+        display: flex;
+        padding: 13px 5px;
+    }
+
+    .ua-dropdown-menu {
+        position: static;
+        box-shadow: none;
+        padding-left: 15px;
+    }
+
+    .ua-dropdown.ua-dropdown-open .ua-dropdown-menu {
+        display: block;
+    }
+
+    .ua-footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* ===================================
+   MOBILE PHONES
+=================================== */
+
+@media (max-width: 600px) {
+    .ua-header {
+        padding: 10px 4%;
+        gap: 10px;
+    }
+
+    .ua-brand {
+        gap: 6px;
+    }
+
+    .ua-brand img {
+        width: 45px;
+        height: 50px;
+    }
+
+    .ua-brand-text strong {
+        font-size: 12px;
+    }
+
+    .ua-brand-text small {
+        font-size: 10px;
+    }
+
+    .ua-apply {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .ua-footer {
+        padding: 55px 6% 20px;
+    }
+
+    .ua-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .ua-footer-brand img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .ua-footer-brand strong {
+        font-size: 17px;
+    }
+
+    .ua-footer-brand small {
+        font-size: 13px;
+    }
+
+    .ua-footer-column h3 {
+        margin-bottom: 25px;
+    }
+
+    .ua-whatsapp {
+        width: 55px;
+        height: 55px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 30px;
+    }
+}
+
+
+/* STUDENT AND STAFF PORTALS */
+
+.portal-page {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f3f5fa;
+    font-family: Arial, sans-serif;
+    color: #252b40;
+}
+
+.portal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 5%;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.portal-header img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.portal-header h2 {
+    font-size: 20px;
+    color: #24499c;
+    text-align: center;
+}
+
+.portal-header > a:last-child {
+    text-decoration: none;
+    color: #24499c;
+}
+
+.portal-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 20px;
+}
+
+.portal-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.09);
+}
+
+.portal-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9eaff;
+    color: #2414bd;
+    font-size: 32px;
+}
+
+.staff-icon {
+    background: #e1f4ed;
+    color: #15805d;
+}
+
+.portal-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.portal-card > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.portal-card form label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+}
+
+.portal-card form input {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    border: 1px solid #d4d8e2;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.portal-card form input:focus {
+    outline: 2px solid #a8a3ff;
+    border-color: #2414bd;
+}
+
+.portal-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #2414bd;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.portal-button:hover {
+    background: #170b8c;
+}
+
+.portal-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.portal-links a {
+    color: #24499c;
+    text-decoration: none;
+}
+
+.portal-footer {
+    padding: 20px;
+    background: #050414;
+    color: #aaa;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .portal-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portal-header h2 {
+        font-size: 15px;
+    }
+
+    .portal-card {
+        padding: 25px 20px;
+    }
 }
