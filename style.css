@@ -2104,3 +2104,27 @@ section {
         padding: 25px 20px;
     }
 }
+
+
+/* BACK TO TOP BUTTON */
+
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 85px;
+    right: 25px;
+    z-index: 999;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#backToTop:hover {
+    background: #e6a817;
+}
