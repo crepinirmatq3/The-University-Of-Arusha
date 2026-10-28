@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admissions - The University of Arusha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+<div class="admission-section">
+
+    <h1>Admission Form</h1>
+
+    <p>Fill in the form below to apply for admission.</p>
+
+    <form class="admission-form" action="/api/applications" method="post" data-application-form>
+
+        <p class="application-status" role="status" aria-live="polite"></p>
+
+        <div class="form-row">
+
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input id="first-name" name="firstName" type="text" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input id="last-name" name="lastName" type="text" placeholder="Enter your last name" required>
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="admission-email">Email</label>
+            <input id="admission-email" name="email" type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="admission-course">Course</label>
+
+            <select id="admission-course" name="course" required>
+                <option value="">Select your course</option>
+                <option>Information Technology</option>
+                <option>Computer Science</option>
+                <option>Business Administration</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="admission-message">Message</label>
+            <textarea id="admission-message" name="message" placeholder="Write your message"></textarea>
+        </div>
+
+        <button type="submit">SUBMIT APPLICATION</button>
+
+    </form>
+
+</div>
+<script src="admissions.js"></script>
+</body>
+
+</html>
+```

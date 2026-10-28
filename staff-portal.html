@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Portal - University of Arusha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="portal-page" data-portal-role="staff">
+
+    <header class="portal-header">
+        <a href="index.html">
+            <img src="LOGOOO.png" alt="University Logo">
+        </a>
+        <h2>THE UNIVERSITY OF ARUSHA</h2>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <main class="portal-container">
+        <div class="portal-card">
+
+            <div class="portal-icon staff-icon">
+                <i class="fa-solid fa-user-tie"></i>
+            </div>
+
+            <h1>Staff Portal</h1>
+            <p>Sign in to access staff services.</p>
+
+            <div id="staff-login-panel">
+                <form id="staff-login-form" novalidate>
+
+                    <label for="staff-id">Staff ID / Username</label>
+                    <input type="text" id="staff-id" name="username"
+                           placeholder="Enter your staff ID" required>
+
+                    <label for="staff-password">Password</label>
+                    <input type="password" id="staff-password"
+                           name="password" placeholder="Enter your password"
+                           required>
+
+                    <button type="submit" class="portal-button">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Staff Login
+                    </button>
+
+                    <p id="staff-message" class="portal-message" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+            <div id="staff-dashboard" class="portal-dashboard" hidden>
+                <h2>Welcome, <span id="staff-name">Staff Member</span>!</h2>
+                <p>You are signed in to your staff account.</p>
+                <div class="portal-dashboard-grid">
+                    <div class="portal-stat">
+                        <span class="portal-stat-label">Status</span>
+                        <strong>Active</strong>
+                    </div>
+                </div>
+                <p id="staff-dashboard-message" class="portal-message" aria-live="polite"></p>
+                <button type="button" id="staff-logout" class="portal-logout">Log out</button>
+            </div>
+
+            <div class="portal-links">
+                <a href="contact.html">Need help logging in?</a>
+                <a href="index.html">Return to Home</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="portal-footer">
+        <p>&copy; 2026 The University of Arusha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="portal.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<ht
+ml lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          conte
+nt="width=device-width, initial-scale=1.0">
+
+    <title>Contact - The University of Arusha</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER / NAVIGATION
+===================================================== -->
+
+<header class="contact-header">
+
+    <nav>
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo-link">
+            <img src="LOGOOO.png" class="logo" alt="University of Arusha Logo">
+        </a>
+
+
+        <!-- NAVIGATION LINKS -->
+        <div class="nav-links" id="navLinks">
+
+            <!-- Close icon -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="about.html">ABOUT</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">COURSES</a>
+                </li>
+
+                <li>
+                    <a href="admission.html">ADMISSION</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Mobile menu icon -->
+        <i class="fa fa-bars"
+           onclick="showMenu()"></i>
+
+    </nav>
+
+
+    <!-- HEADER TITLE -->
+
+    <div class="contact-title">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            We are here to help you.
+            Get in touch with The University of Arusha.
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     CONTACT SECTION
+===================================================== -->
+
+<section class="contact-section">
+
+    <div class="contact-container">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                If you have questions about admissions,
+                academic programs or university services,
+                please contact us using the information below.
+            </p>
+
+            <!-- Address -->
+
+            <div class="contact-item">
+
+                <i class="fa fa-location-dot"></i>
+
+                <div>
+
+                    <h3>University Address</h3>
+
+                    <p>
+                        The University of Arusha<br>
+                        P.O. Box 7<br>
+                        Arusha, Tanzania
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Location -->
+
+<!-- University Location Map -->
+<section class="university-map">
+    <h2>Find Us on the Map</h2>
+    <p>Visit the University of Arusha.</p>
+
+    <iframe
+        src="https://www.google.com/maps?q=University%20of%20Arusha%2C%20Tanzania&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=University+of+Arusha+Tanzania"
+        target="_blank"
+        rel="noopener">
+        Get Directions
+    </a>
+</section>
+
+
+            <div class="contact-item">
+
+                <i class="fa fa-map-marker-alt"></i>
+
+                <div>
+
+                    <h3>Location</h3>
+
+                    <p>
+                        Arusha, Tanzania
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="contact-item">
+
+                <i class="fa fa-envelope"></i>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <p>
+                        theuniverstyofarusha@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Telephone -->
+
+            <div class="contact-item">
+
+                <i class="fa fa-phone"></i>
+
+                <div>
+
+                    <h3>Telephone</h3>
+
+                    <p>
+                        +255 773 986 200<br>
+                        +255 779 244 245
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONTACT FORM
+        ================================================= -->
+
+        <div class="contact-form">
+
+            <h2>Send Us a Message</h2>
+
+            <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+
+            <form action="/api/messages" method="post">
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message here..."
+                        required></textarea>
+
+                </div>
+
+                <div class="contact-trap" aria-hidden="true">
+                    <label for="website">Leave this field empty</label>
+                    <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+                </div>
+
+
+                <button type="submit"
+                        class="contact-btn">
+
+                    SEND MESSAGE
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <h4>The University of Arusha</h4>
+
+    <p>
+        © 2026 The University of Arusha.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+<!-- =====================================================
+     MOBILE MENU JAVASCRIPT
+===================================================== -->
+
+<script>
+
+    const contactStatus = document.getElementById("contact-status");
+    if (new URLSearchParams(window.location.search).get("sent") === "1") {
+        contactStatus.textContent = "Your message has been sent. Thank you for contacting us.";
+        window.history.replaceState({}, "", window.location.pathname);
+    }
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-250px";
+    }
+
+</script>
+
+
+</body>
+
+</html>

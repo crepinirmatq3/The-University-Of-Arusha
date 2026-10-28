@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin Inbox | University of Arusha</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js" defer></script>
+</head>
+<body>
+    <main class="shell">
+        <section class="login-view" id="login-view" hidden>
+            <a class="brand" href="/index.html">UNIVERSITY <span>OF ARUSHA</span></a>
+            <div class="login-panel">
+                <p class="eyebrow">PRIVATE ADMIN AREA</p>
+                <h1>Message inbox</h1>
+                <p class="muted">Sign in with your administrator account to continue.</p>
+                <form id="login-form">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" autocomplete="username" required>
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required>
+                    <button class="primary-button" type="submit">Sign in</button>
+                    <p class="form-error" id="login-error" role="alert"></p>
+                </form>
+            </div>
+            <a class="back-link" href="/index.html">Return to website</a>
+        </section>
+
+        <section class="inbox-view" id="inbox-view" hidden>
+            <header class="topbar">
+                <a class="brand" href="/index.html">UNIVERSITY <span>OF ARUSHA</span></a>
+                <div class="topbar-actions">
+                    <span id="signed-in-as"></span>
+                    <button class="quiet-button" id="logout-button" type="button">Sign out</button>
+                </div>
+            </header>
+            <div class="page-heading">
+                <div>
+                    <p class="eyebrow">ADMINISTRATION</p>
+                    <h1 id="view-title">Messages</h1>
+                </div>
+                <span class="count" id="view-count">0 messages</span>
+            </div>
+            <div class="view-tabs" role="tablist" aria-label="Admin data views">
+                <button id="messages-tab" class="view-tab selected" type="button" role="tab" aria-selected="true">
+                    Messages <span id="message-count">0</span>
+                </button>
+                <button id="applications-tab" class="view-tab" type="button" role="tab" aria-selected="false">
+                    Applications <span id="application-count">0</span>
+                </button>
+                <button id="portal-users-tab" class="view-tab" type="button" role="tab" aria-selected="false">
+                    Portal accounts <span id="portal-user-count">0</span>
+                </button>
+            </div>
+            <div class="inbox-layout" id="messages-view">
+                <section class="message-list" aria-label="Message list">
+                    <div class="list-tools">
+                        <label class="search-box" for="message-search">
+                            <span aria-hidden="true">⌕</span>
+                            <input id="message-search" type="search" placeholder="Search messages" autocomplete="off">
+                        </label>
+                        <select id="message-filter" aria-label="Filter messages">
+                            <option value="all">All messages</option>
+                            <option value="unread">Unread</option>
+                            <option value="read">Read</option>
+                        </select>
+                    </div>
+                    <div id="message-items" class="message-items"></div>
+                    <p class="empty-state" id="empty-state" hidden>No messages match this view.</p>
+                </section>
+                <section class="message-detail" id="message-detail" aria-live="polite">
+                    <div class="detail-placeholder">
+                        <span class="inbox-mark" aria-hidden="true">✉</span>
+                        <h2>Select a message</h2>
+                        <p>Choose a message from the inbox to read its details.</p>
+                    </div>
+                </section>
+            </div>
+            <div class="inbox-layout" id="applications-view" hidden>
+                <section class="message-list" aria-label="Application list">
+                    <div class="list-tools">
+                        <label class="search-box" for="application-search">
+                            <span aria-hidden="true">⌕</span>
+                            <input id="application-search" type="search" placeholder="Search applicants" autocomplete="off">
+                        </label>
+                        <select id="application-filter" aria-label="Filter applications">
+                            <option value="all">All applications</option>
+                            <option value="unread">New</option>
+                            <option value="read">Reviewed</option>
+                        </select>
+                    </div>
+                    <div id="application-items" class="message-items"></div>
+                    <p class="empty-state" id="application-empty-state" hidden>No applications match this view.</p>
+                </section>
+                <section class="message-detail" id="application-detail" aria-live="polite">
+                    <div class="detail-placeholder">
+                        <span class="inbox-mark" aria-hidden="true">▤</span>
+                        <h2>Select an application</h2>
+                        <p>Choose an application to review the applicant details.</p>
+                    </div>
+                </section>
+            </div>
+            <section class="portal-users-view" id="portal-users-view" hidden>
+                <div class="portal-users-heading">
+                    <div>
+                        <h2>Student and staff accounts</h2>
+                        <p class="muted">Usernames are listed here. Passwords are never displayed; create or reset a password using the form.</p>
+                    </div>
+                </div>
+                <div class="portal-users-layout">
+                    <form class="portal-user-form" id="portal-user-form">
+                        <h3>Create or reset account</h3>
+                        <label for="portal-user-role">Account type</label>
+                        <select id="portal-user-role" name="role" required>
+                            <option value="student">Student</option>
+                            <option value="staff">Staff</option>
+                        </select>
+                        <label for="portal-user-username">Username or ID</label>
+                        <input id="portal-user-username" name="username" maxlength="80" autocomplete="off" required>
+                        <label for="portal-user-display-name">Display name</label>
+                        <input id="portal-user-display-name" name="displayName" maxlength="120" autocomplete="name" required>
+                        <label for="portal-user-password">New password</label>
+                        <input id="portal-user-password" name="password" type="password" minlength="12" maxlength="1024" autocomplete="new-password" required>
+                        <p class="muted password-hint">Use at least 12 characters. To reset an account, enter its existing type and username with the new password.</p>
+                        <button class="primary-button" type="submit">Save account</button>
+                        <p class="form-error" id="portal-user-form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    <section class="portal-user-list-panel" aria-label="Portal account list">
+                        <h3>Existing accounts</h3>
+                        <p class="empty-state" id="portal-users-empty" hidden>No portal accounts have been created.</p>
+                        <div id="portal-user-list" class="portal-user-list"></div>
+                    </section>
+                </div>
+            </section>
+            <p class="page-error" id="page-error" role="alert"></p>
+        </section>
+    </main>
+</body>
+</html>

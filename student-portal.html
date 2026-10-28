@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - University of Arusha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="portal-page" data-portal-role="student">
+
+    <header class="portal-header">
+        <a href="index.html">
+            <img src="LOGOOO.png" alt="University Logo">
+        </a>
+        <h2>THE UNIVERSITY OF ARUSHA</h2>
+        <a href="index.html">Back to Home</a>
+    </header>
+
+    <main class="portal-container">
+        <div class="portal-card">
+
+            <div class="portal-icon">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+
+            <h1>Student Portal</h1>
+            <p>Sign in to access your student account.</p>
+
+            <div id="student-login-panel">
+                <form id="student-login-form" novalidate>
+
+                    <label for="student-id">Student ID / Username</label>
+                    <input type="text" id="student-id" name="username"
+                           placeholder="Enter your student ID" required>
+
+                    <label for="student-password">Password</label>
+                    <input type="password" id="student-password"
+                           name="password" placeholder="Enter your password"
+                           required>
+
+                    <button type="submit" class="portal-button">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Student Login
+                    </button>
+
+                    <p id="student-message" class="portal-message" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+
+            <div id="student-dashboard" class="portal-dashboard" hidden>
+                <h2>Welcome back, <span id="student-name">Student</span>!</h2>
+                <p>You are signed in to your student account.</p>
+                <div class="portal-dashboard-grid">
+                    <div class="portal-stat">
+                        <span class="portal-stat-label">Status</span>
+                        <strong>Active</strong>
+                    </div>
+                </div>
+                <p id="student-dashboard-message" class="portal-message" aria-live="polite"></p>
+                <button type="button" id="student-logout" class="portal-logout">Log out</button>
+            </div>
+
+            <div class="portal-links">
+                <a href="contact.html">Need help logging in?</a>
+                <a href="index.html">Return to Home</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="portal-footer">
+        <p>&copy; 2026 The University of Arusha. All Rights Reserved.</p>
+    </footer>
+
+    <script src="portal.js" defer></script>
+
+</body>
+</html>
