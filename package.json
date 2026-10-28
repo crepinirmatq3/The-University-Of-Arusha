@@ -1,13 +1,11 @@
 {
-  "name": "uarusha-private-inbox",
+  "name": "university-of-arusha",
   "version": "1.0.0",
-  "private": true,
+  "description": "University of Arusha website",
   "scripts": {
-    "setup-admin": "node setup-admin.js",
-    "setup-portal-user": "node setup-portal-user.js",
     "start": "node server.js"
   },
-  "engines": {
-    "node": ">=22.13"
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
